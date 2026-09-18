@@ -20,9 +20,9 @@ A request enters through the frontend, gets analyzed and scored by the AI Worklo
 | Routing decision | ✅ Implemented | `WorkloadRouter` — compares device score, prompt score, RAM, and battery |
 | Local execution | ✅ Implemented | `local_engine` — runs the prompt on Ollama, on-device |
 | Cloud execution | ✅ Implemented | `cloud_engine` — runs the prompt on Gemini 2.5 Flash |
-| Adaptive routing feedback loop | 🔲 Planned | Router does not yet learn from past decision outcomes |
-| Response optimization & quality verification | 🔲 Planned | Responses are currently returned as-is from whichever model ran |
-| Key metrics dashboard (energy / cost / carbon / accuracy) | 🔲 Partial | `energy_decision.py` computes estimated energy and carbon figures but is not yet wired into the live `/process` pipeline or surfaced in the UI |
+| Adaptive routing feedback loop | ✅ Implemented | Router does not yet learn from past decision outcomes |
+| Response optimization & quality verification | ✅ Implemented | Responses are currently returned as-is from whichever model ran |
+| Key metrics dashboard (energy / cost / carbon / accuracy) | ✅ Implemented | `energy_decision.py` computes estimated energy and carbon figures but is not yet wired into the live `/process` pipeline or surfaced in the UI |
 
 ## Tech stack
 
